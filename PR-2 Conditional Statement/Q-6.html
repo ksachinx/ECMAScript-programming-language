@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //6.Write a JavaScript program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to the following
+        let physics = parseInt(prompt("Enter marks for Physics:"));
+        let chemistry = parseInt(prompt("Enter marks for Chemistry:"));
+        let biology = parseInt(prompt("Enter marks for Biology:"));
+        let mathematics = parseInt(prompt("Enter marks for Mathematics:"));
+        let computer = parseInt(prompt("Enter marks for Computer:"));
+        
+        // Calculating total marks and percentage
+        let totalMarks = physics + chemistry + biology + mathematics + computer;
+        let percentage = (totalMarks / 500) * 100;
+
+        // Determine grade based on percentage
+        let grade;
+        if (percentage >= 90) {
+            grade = 'A+';
+        } else if (percentage >= 80) {
+            grade = 'A';
+        } else if (percentage >= 70) {
+            grade = 'B';
+        } else if (percentage >= 60) {
+            grade = 'C';
+        } else if (percentage >= 50) {
+            grade = 'D';
+        } else {
+            grade = 'F';
+        }
+
+        document.write("Total Marks: " + totalMarks + "/500<br>");
+        document.write("Percentage: " + percentage.toFixed(2) + "%<br>");
+        document.write("Grade: " + grade + "<br>");
+
+    </script>
+</body>
+
+</html>

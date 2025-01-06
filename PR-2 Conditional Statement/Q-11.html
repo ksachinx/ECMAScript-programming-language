@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator Using Ladder If-Else</title>
+</head>
+
+<body>
+    <h2>Basic Calculator</h2>
+    <!-- 11. Write a JavaScript program to create basic calculator using ladder if else.  -->
+    <script type="text/javascript">
+        var a = parseFloat(prompt("Enter the first number (a):"));
+        var b = parseFloat(prompt("Enter the second number (b):"));
+        var choice = prompt("Select operation (+, -, *, /):");
+
+        var result;
+
+        if (choice === '+') {
+            result = a + b;
+        } else if (choice === '-') {
+            result = a - b;
+        } else if (choice === '*') {
+            result = a * b;
+        } else if (choice === '/') {
+            if (b !== 0) {
+                result = a / b;
+            } else {
+                result = "Cannot divide by zero!";
+            }
+        } else {
+            result = "Invalid operation! Please select +, -, *, or /.";
+        }
+
+        document.write("a = " + a + "<br>");
+        document.write("b = " + b + "<br>");
+        document.write("Selected operation: " + choice + "<br>");
+        document.write("Result: " + result);
+    </script>
+</body>
+
+</html>
