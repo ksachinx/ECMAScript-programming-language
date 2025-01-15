@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <h1>Fibonacci Series</h1>
+
+    <script>
+        // Q-13 Write javascript program print out Fibonacci series. (0,1,1,2,3,5,8…)
+        var num1 = 0, num2 = 1, nextTerm;
+        var terms = 10;
+        document.write(num1 + ", " + num2);
+        for (var i = 3; i <= terms; i++) {
+            nextTerm = num1 + num2;
+            document.write(", " + nextTerm);
+            num1 = num2;
+            num2 = nextTerm;
+        }
+    </script>
+</body>
+</html>

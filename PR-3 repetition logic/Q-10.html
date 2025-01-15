@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculation</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Q-10 Write javascript program to calculate factorial of a number using while loop.
+        var number = parseInt(prompt("Enter a number to calculate its factorial:"));
+        
+        var factorial = 1;
+        if (number < 0) {
+            document.write("Factorial is not defined for negative numbers.");
+        } else {
+            var i = number;
+            while (i > 1) {
+                factorial *= i;
+                i--;
+            }
+            document.write("Factorial of " + number + " is: " + factorial);
+        }
+    </script>
+</body>
+
+</html>

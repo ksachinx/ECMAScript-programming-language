@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Numbers and Sum</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Q-6 .Write javascript program to print 1 to n number  and all number sum using do while loop . 
+
+        var n = parseInt(prompt("Enter a number:"));
+        var i = 1;
+        var sum = 0;
+        do {
+            document.write("Number: " + i + "<br>");
+            sum += i;
+            i++;
+        } while (i <= n);
+        document.write("Total Sum: " + sum);
+    </script>
+
+</body>
+
+</html>

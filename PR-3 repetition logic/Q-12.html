@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Check</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Q-12 Write javascript program Check weather num is prime or not using while loop
+        var num = parseInt(prompt("Enter a number to check if it's prime:"));
+        var isPrime = true;
+        if (num <= 1) {
+            isPrime = false;
+        } else {
+            var i = 2;
+            while (i <= Math.sqrt(num)) {
+                if (num % i === 0) {
+                    isPrime = false;
+                    break; 
+                }
+                i++;
+            }
+        }
+        if (isPrime) {
+            document.write(num + " is a prime number.");
+        } else {
+            document.write(num + " is not a prime number.");
+        }
+    </script>
+</body>
+
+</html>
