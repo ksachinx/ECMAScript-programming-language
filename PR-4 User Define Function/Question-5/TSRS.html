@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Define Function</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 5.Write a JavaScript program to add two number of addition, subtraction, multiplication, division (using simple function) ?
+
+        // Take somthing Return Somthing
+        let a = parseInt(prompt("Enter Number A:"));
+        let b = parseInt(prompt("Enter Number B:"));
+
+        const add = (a, b) => {
+            return a + b;
+        }
+
+        const subtract = (a, b) => {
+            return a - b;
+        }
+
+        const multiply = (a, b) => {
+            return a * b;
+        }
+
+        const divide = (a, b) => {
+            return a / b;
+        }
+        document.write(`<h1> Addition of ${a} + ${b} =: ${add(a, b)}</h1>`);
+        document.write(`<h1> Subtraction of ${a} - ${b} =: ${subtract(a, b)}</h1>`);
+        document.write(`<h1> Multiplication of ${a} * ${b} =: ${multiply(a, b)}</h1>`);
+        document.write(`<h1> Division of ${a} / ${b} =: ${divide(a, b)}</h1>`);
+    </script>
+</body>
+
+</html>

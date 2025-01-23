@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Defined Function</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //3.Write a JavaScript program to find which number is greter in 4 numbers using nested if else. (using simple function) ?
+
+        // Take Nothing Return somthing 
+
+        let p = parseInt(prompt(`Enter No P:`));
+        let q = parseInt(prompt(`Enter No Q:`));
+        let r = parseInt(prompt(`Enter No R:`));
+        let s = parseInt(prompt(`Enter No S:`));
+
+        const findGreater = () => {
+            if (p > q) {
+                if (p > r) {
+                    if (p > s) {
+                        document.write(`P is greater than all numbers.`);
+                    } else {
+                        document.write(`S is greater than P.`);
+                    }
+                } else {
+                    if (r > s) {
+                        document.write(`R is greater than P.`);
+                    } else {
+                        document.write(`S is greater than R.`);
+                    }
+                }
+            } else {
+                if (q > r) {
+                    if (q > s) {
+                        document.write(`Q is greater than all numbers.`);
+                    } else {
+                        document.write(`S is greater than Q.`);
+                    }
+                } else {
+                    if (r > s) {
+                        document.write(`R is greater than all numbers.`);
+                    } else {
+                        document.write(`S is greater than R.`);
+                    }
+                }
+            }
+        };
+        findGreater();
+
+    </script>
+</body>
+
+</html>

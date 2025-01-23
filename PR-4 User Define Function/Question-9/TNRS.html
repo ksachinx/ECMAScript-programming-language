@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Define Function</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //9.Write a JavaScript   program to input angles of a triangle and check whether triangle is valid or not.(using all function) ?
+
+        // Take Nothing Return somthing 
+        let angle1 = parseInt(prompt("Enter the first angle of the triangle:"));
+        let angle2 = parseInt(prompt("Enter the second angle of the triangle:"));
+        let angle3 = parseInt(prompt("Enter the third angle of the triangle:"));
+        function a() {
+
+            if (angle1 <= 0 || angle2 <= 0 || angle3 <= 0) {
+                alert("Angles must be positive values.");
+                return;
+            }
+
+            if (angle1 + angle2 + angle3 === 180) {
+                alert("The triangle is valid.");
+            } else {
+                alert("The triangle is not valid.");
+            }
+        }
+        a();
+
+    </script>
+</body>
+
+</html>

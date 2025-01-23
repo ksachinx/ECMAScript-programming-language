@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Define Function</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 1.Write a JavaScript program to check number positive and negetive? (using simple function) ?
+
+        // Take Nothing Return somthing 
+        let a = parseInt(prompt(`Enter Number A:-`));
+        const checkno1 = () => {
+            if (a > 0) {
+                return `Number Is Positive`;
+            }
+            else if (a < 0) {
+                return `Number Is Negative`;
+            }
+            else {
+                return `Number Is Natural`;
+            }
+        }
+        document.write(checkno1());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Define Function</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //4.Write a JavaScript program to find which number is greater in 4 numbers using ladder if else. (using no return with parameter function) ?
+
+        // Take Nothing Return somthing 
+        let a = parseInt(prompt(`Enter Number A:-`));
+        let b = parseInt(prompt(`Enter Number B:-`));
+        let c = parseInt(prompt(`Enter Number C:-`));
+        let d = parseInt(prompt(`Enter Number D:-`));
+
+        const max = () => {
+            if (a > b && a > c && a > d) {
+                return document.write(`Number A is greater than the other numbers`);
+            }
+            else if (b > a && b > c && b > d) {
+                return document.write(`Number B is greater than the other numbers`);
+            }
+            else if (c > a && c > b && c > d) {
+                return document.write(`Number C is greater than the other numbers`);
+            }
+            else if (d > a && d > b && d > c) {
+                return document.write(`Number D is greater than the other numbers`);
+            }
+            else {
+                return document.write(`All numbers are equal`);
+            }
+        }
+        max();
+
+    </script>
+</body>
+
+</html>

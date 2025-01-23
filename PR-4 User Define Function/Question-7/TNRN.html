@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Define Function</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 7.Write a JavaScript program to find which number is greter in 3 numbers using nested if else.(using all function) ?
+
+        // Take Nothing Return Nothing 
+        let a = parseInt(prompt(`Enter Number A:-`));
+        let b = parseInt(prompt(`Enter Number B:-`));
+        let c = parseInt(prompt(`Enter Number C:-`));
+
+        const findGreatest = () => {
+            if (a >= b) {
+                if (a >= c) {
+                    document.write(`<h1>The greatest number is: ${a}</h1>`);
+                } else {
+                    document.write(`<h1>The greatest number is: ${c}</h1>`);
+                }
+            } else {
+                if (b >= c) {
+                    document.write(`<h1>The greatest number is: ${b}</h1>`);
+                } else {
+                    document.write(`<h1>The greatest number is: ${c}</h1>`);
+                }
+            }
+        }
+        findGreatest();
+    </script>
+</body>
+
+</html>

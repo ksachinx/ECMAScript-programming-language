@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Define Function</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 3. Write a JavaScript program to find which number is greater in 4 numbers using nested if else (using a simple function) ?
+
+        // Take somthing Return Somthing
+        let p = parseInt(prompt(`Enter No P:`));
+        let q = parseInt(prompt(`Enter No Q:`));
+        let r = parseInt(prompt(`Enter No R:`));
+        let s = parseInt(prompt(`Enter No S:`));
+
+        const checknumber = (p, q, r, s) => {
+            if (p > q) {
+                if (p > r) {
+                    if (p > s) {
+                        return document.write(`<h2>P is max..</h2>`);
+                    } else {
+                        return document.write(`<h2>S is max..</h2>`);
+                    }
+                } else {
+                    if (r > s) {
+                        return document.write(`<h2>R is max..</h2>`);
+                    } else {
+                        return document.write(`<h2>S is max..</h2>`);
+                    }
+                }
+            } else {
+                if (q > r) {
+                    if (q > s) {
+                        return document.write(`<h2>Q is max..</h2>`);
+                    } else {
+                        return document.write(`<h2>S is max..</h2>`);
+                    }
+                } else {
+                    if (r > s) {
+                        return document.write(`<h2>R is max..</h2>`);
+                    } else {
+                        return document.write(`<h2>S is max..</h2>`);
+                    }
+                }
+            }
+        };
+        checknumber(p, q, r, s);
+    </script>
+</body>
+
+</html>

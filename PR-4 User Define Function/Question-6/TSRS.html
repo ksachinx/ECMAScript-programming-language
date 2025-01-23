@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Define Function</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 6 .Write a javascript Program to perform a swapping of two variables.(all function use) ?
+
+        // Take somthing Return Somthing
+        let a = parseInt(prompt("Enter the value for variable A:"));
+        let b = parseInt(prompt("Enter the value for variable B:"));
+        document.write(`<h1>Before Swapping:</h1>`);
+        document.write(`<h1>Value of A: ${swappedValues.a}</h1>`);
+        document.write(`<h1>Value of B: ${swappedValues.b}</h1>`);
+        const swap = (a, b) => {
+            let temp = a;
+            a = b;
+            b = temp;
+            return { a: a, b: b };
+        }
+        let swappedValues = swap(a, b);
+        document.write(`<h1>After Swapping:</h1>`);
+        document.write(`<h1>Value of A: ${swappedValues.a}</h1>`);
+        document.write(`<h1>Value of B: ${swappedValues.b}</h1>`);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Define Function</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 8. Write a JavaScript program to create basic calculator using switch case. (simple function use) ?
+
+        // Take Nothing Return Nothing 
+        let a = parseInt(prompt("Enter Number A:"));
+        let b = parseInt(prompt("Enter Number B:"));
+        let operation = prompt("Enter the operation (+, -, *, /):");
+
+        // Function to create the basic calculator using switch case
+        function basicCalculator() {
+            switch (operation) {
+                case "+":
+                    alert("Result: " + (a + b));
+                    break;
+                case "-":
+                    alert("Result: " + (a - b));
+                    break;
+                case "*":
+                    alert("Result: " + (a * b));
+                    break;
+                case "/":
+                    alert("Result: " + (a / b));
+                    break;
+                default:
+                    alert("Invalid operation! Please enter one of the following: +, -, *, /.");
+            }
+        }
+        basicCalculator();
+
+    </script>
+</body>
+
+</html>
