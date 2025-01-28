@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Duplicate Element</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // 4. Find duplicate element in array ?
+
+        let arr = [1, 2, 3, 4, 5, 2, 6, 7, 8, 9, 5, 10];
+        let duplicate = arr.map(x => x).filter((x, i, a) => a.indexOf(x) !== i && a.indexOf(x) !== -1);
+        document.write(`<h1>Duplicate Element: ${duplicate}</h1>`); 
+    </script>
+</body>
+
+</html>

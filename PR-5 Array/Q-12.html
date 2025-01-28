@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Duplicate Elements</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 12. Remove duplicate elements in array using filter
+
+        let arr = [1, 2, 2, 3, 4, 4, 5, 6, 6, 7];
+        let uniqueArr = arr.filter((value, index, self) => self.indexOf(value) === index);
+        document.write(`<h1>Array without duplicates: ${uniqueArr}</h1>`);
+    </script>
+</body>
+</html>

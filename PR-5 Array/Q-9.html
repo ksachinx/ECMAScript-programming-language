@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Array Element</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 9. Search array element using findIndex() in ES6
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
+        let search = 5;
+        let foundIndex = arr.findIndex(item => item === search);
+        if (foundIndex !== -1) {
+            document.write(`<h1>Element ${search} found at index ${foundIndex}</h1>`);
+        } else {
+            document.write(`<h1>Element ${search} not found</h1>`);
+        }
+    </script>
+</body>
+</html>
