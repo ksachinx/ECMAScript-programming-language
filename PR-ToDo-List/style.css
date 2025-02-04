@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background */
+body {
+    background: linear-gradient(135deg, #00aaff, #0077b6);
+    /* Beautiful gradient for a modern vibe */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+}
+
+/* Todo Container */
+.todo-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #009cba;
+    margin-bottom: 30px;
+}
+
+/* Input Section */
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 12px 20px;
+    width: 70%;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    background-color: #f1f3f4;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #00aaff;
+    background-color: #ffffff;
+}
+
+button {
+    padding: 14px 20px;
+    background-color: #00aaff;
+    border: none;
+    color: white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0077b6;
+}
+
+/* Task List Section */
+.task-list-container {
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.task-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.task-card:hover {
+    background-color: #e0f7fa;
+    /* Light cyan on hover */
+}
+
+.task-text {
+    font-size: 18px;
+    color: #333;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+button.remove-btn {
+    background-color: #ff4747;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.remove-btn:hover {
+    background-color: #e03e3e;
+}
+
+button.edit-btn {
+    background-color: #ffb84d;
+    padding: 8px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button.edit-btn:hover {
+    background-color: #e6952e;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .todo-container {
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 60%;
+    }
+
+    button {
+        width: 35%;
+    }
+}

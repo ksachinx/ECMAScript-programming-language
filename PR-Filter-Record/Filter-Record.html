@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best UI - Filter Records</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Filter Records</h1>
+
+        <!-- Filter by City -->
+        <div class="input-group">
+            <input type="text" id="city" placeholder="Enter city name...">
+            <button onclick="cityFun()">Filter by City</button>
+        </div>
+
+        <!-- Filter by Salary -->
+        <div class="input-group">
+            <input type="number" id="minSalary" placeholder="Min Salary">
+            <input type="number" id="maxSalary" placeholder="Max Salary">
+            <button onclick="salaryFun()">Filter by Salary</button>
+        </div>
+
+        <!-- Filter by Designation -->
+        <div class="input-group">
+            <input type="text" id="designation" placeholder="Enter designation...">
+            <button onclick="designationFun()">Filter by Designation</button>
+        </div>
+
+        <!-- Filter by Hobby -->
+        <div class="input-group">
+            <input type="text" id="hobby" placeholder="Enter hobby...">
+            <button onclick="hobbyFun()">Filter by Hobby</button>
+        </div>
+
+        <!-- Error message -->
+        <div class="error-message" id="error">No records found for the selected criteria.</div>
+
+        <!-- Table to display records -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Hobby</th>
+                    <th>City</th>
+                    <th>Salary</th>
+                    <th>Designation</th>
+                </tr>
+            </thead>
+            <tbody id="record">
+                <!-- Dynamic records will be inserted here -->
+            </tbody>
+        </table>
+
+        <button class="reset-btn" onclick="reset()">Reset Filter</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
