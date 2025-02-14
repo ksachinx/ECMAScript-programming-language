@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Account</title>
+</head>
+<body>
+  <script>
+    class BankAccount {
+      constructor(accountNumber, balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+      }
+
+      deposit(amount) {
+        this.balance += amount;
+        document.write(`Deposited: ${amount}<br>`);
+      }
+
+      withdraw(amount) {
+        if (amount <= this.balance) {
+          this.balance -= amount;
+          document.write(`Withdrawn: ${amount}<br>`);
+        } else {
+          document.write(`Insufficient balance. Cannot withdraw ${amount}<br>`);
+        }
+      }
+
+      getBalance() {
+        return this.balance;
+      }
+
+      printAccountDetails() {
+        document.write(`A/c No.: ${this.accountNumber}<br>`);
+        document.write(`Account Balance: ${this.balance}<br>`);
+      }
+    }
+
+    // Create instances of BankAccount
+    const account1 = new BankAccount(212121212, 1500);
+    document.write(`A/c No.: ${account1.accountNumber}<br>`);
+    document.write(`Opening Balance: ${account1.balance}<br>`);
+
+    account1.deposit(500);
+    account1.withdraw(400);
+    account1.printAccountDetails();
+
+    document.write(`Want to withdraw: 1800<br>`);
+    account1.withdraw(1800);
+    account1.printAccountDetails();
+  </script>
+</body>
+</html>

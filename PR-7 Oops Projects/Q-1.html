@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Details</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        class Person {
+            constructor(name, age, country) {
+                this.name = name;
+                this.age = age;
+                this.country = country;
+            }
+
+            displayDetails() {
+                document.write(`<p>Name: ${this.name}</p>`);
+                document.write(`<p>Age: ${this.age}</p>`);
+                document.write(`<p>Country: ${this.country}</p>`);
+                document.write('<br>'); // Adds a line break between persons
+            }
+        }
+
+        // Create two instances of the Person class
+        const person1 = new Person("Hiren", 25, "USA");
+        const person2 = new Person("Popatlal", 50, "IND");
+        const person3 = new Person("Tarak", 50, "Uk");
+        const person4 = new Person("Tapu", 20, "Nz");
+        const person5 = new Person("Goli", 50, "IND");
+
+        // Display their details using document.write
+        document.write("<h2>Person-1 Details:</h2>");
+        person1.displayDetails();
+
+        document.write("<h2>Person-2 Details:</h2>");
+        person2.displayDetails();
+
+        document.write("<h2>Person-3 Details:</h2>");
+        person2.displayDetails();
+
+        document.write("<h2>Person-4 Details:</h2>");
+        person2.displayDetails();
+
+        document.write("<h2>Person-5 Details:</h2>");
+        person2.displayDetails();
+    </script>
+</body>
+
+</html>
