@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    background-color: #1c1c1c;
+    color: #dcdcdc;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    background-color: #292524;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .zepto-logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 8px;
+  }
+  
+  .btn-custom {
+    background: linear-gradient(to right, #ff416c, #ff4b2b) !important;
+    color: #292524;
+    border: 1px solid #ff416c;
+    border-radius: 25px;
+    padding: 10px 25px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-custom:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+  }
+  
+  button {
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    border: 0 transparent !important;
+    border-radius: 25px;
+    padding: 10px 25px;
+    color: #292524;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+  }
+  
+  .card-body {
+    background-color: #292524;
+    color: #dcdcdc;
+  }
+  
+  .card {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card a {
+    background-color: #299ccb;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .card a:hover {
+    background-color: #ff416c;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  #num {
+    color: #ff416c;
+    font-weight: bold;
+    transform: translateY(-10px);
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    background-color: #ff416c;
+    color: #aae89e;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
+  .header-link {
+    color: #dcdcdc;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .header-link:hover {
+    color: #ff416c;
+  }
+  
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    color: #ff416c;
+    font-weight: bold;
+  }
+  
+  .card-subtitle {
+    font-size: 1rem;
+    color: #dcdcdc;
+  }
+  

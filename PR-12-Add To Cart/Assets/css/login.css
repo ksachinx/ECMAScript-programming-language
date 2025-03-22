@@ -1,0 +1,93 @@
+/* Reset styles for padding, margin, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #1e1b1a; /* Dark background color */
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Container that holds the login form */
+  .container {
+    max-width: 450px;
+  }
+  
+  .login-container {
+    background-color: #f9f9f9; /* Soft White background for the form */
+    padding: 40px;
+    border-radius: 15px;
+    border: 2px solid #708090; /* Slate Gray border */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+  }
+  
+  /* Styling for the title */
+  h2 {
+    color: #333333; /* Dark Charcoal for title */
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  
+  /* Custom form controls */
+  .form-control {
+    border-radius: 25px;
+    padding: 15px;
+    background-color: #f4f4f4; /* Light gray background for inputs */
+    color: #333333; /* Dark text for readability */
+    border: 1px solid #ddd; /* Light gray border for inputs */
+    margin-bottom: 15px;
+  }
+  
+  .form-control::placeholder {
+    color: #bbb; /* Lighter gray for placeholder text */
+  }
+  
+  /* Button styling */
+  .btn-custom {
+    background-color: #008080; /* Teal Blue */
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    transition: 0.3s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #20b2aa; /* Light Sea Green on hover */
+  }
+  
+  /* Link styling */
+  .text-center a {
+    color: #f08080; /* Light Coral color for links */
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .text-center a:hover {
+    text-decoration: underline;
+    color: #008080; /* Change link color to Teal Blue on hover */
+  }
+  
+  /* Styling for the text below the login form */
+  p {
+    color: #d3d3d3; /* Light Gray color for paragraph text */
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  /* Add a subtle shadow to the form for better contrast */
+  .login-container {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  

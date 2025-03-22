@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="weather-app">
+            <h1>Weather Forecast</h1>
+            <div class="search-bar">
+                <input type="text" id="city" placeholder="Enter city name..." />
+                <button onclick="fetchWeather()">Search</button>
+            </div>
+            <div id="weather-content" class="weather-info">
+                <p>Enter a city to get the forecast!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>

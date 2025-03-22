@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Global Stats</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>COVID-19 Global Statistics</h1>
+            <p>Stay informed with the latest global stats on COVID-19</p>
+        </header>
+        
+        <div class="table-container">
+            <table id="covid-table">
+                <thead>
+                    <tr>
+                        <th>Last Updated</th>
+                        <th>Total Cases</th>
+                        <th>Cases Today</th>
+                        <th>Total Deaths</th>
+                        <th>Active Cases</th>
+                        <th>Critical Cases</th>
+                        <th>Total Recovered</th>
+                        <th>Population</th>
+                    </tr>
+                </thead>
+                <tbody id="cg">
+                    <tr>
+                        <td colspan="8">Loading data...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="corona.js"></script>
+</body>
+
+</html>
